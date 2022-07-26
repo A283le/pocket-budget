@@ -12,7 +12,7 @@ export default function Footer() {
 const styles = StyleSheet.create({
     footer: {
         position: 'absolute',
-        backgroundColor: 'skyblue',
+        backgroundColor: 'blue',
         bottom: 0,
         alignItems: 'center',
         width: Dimensions.get("window").width,
