@@ -1,11 +1,16 @@
 // @generated: @expo/next-adapter@2.1.52
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { ScrollView } from 'react-native-web';
+import Footer from './footer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      <ScrollView>
+        <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      </ScrollView>
+      <Footer/>
     </View>
   );
 }
