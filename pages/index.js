@@ -1,16 +1,14 @@
 // @generated: @expo/next-adapter@2.1.52
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { ScrollView } from 'react-native-web';
-import Footer from './footer';
+import { StyleSheet, ScrollView, View } from 'react-native';
+import Body from './views/body';
+import Footer from './views/footer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ScrollView>
-        <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
-      </ScrollView>
-      <Footer/>
+      <ScrollView><Body/></ScrollView>
+      <Footer />
     </View>
   );
 }
@@ -20,8 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  text: {
-    fontSize: 16,
   },
 });
